@@ -1,0 +1,3 @@
+- name: Run the bash script install/let-encrypt
+  command: sh install-nc.sh
+  command: sh lets-encrypt-nc.sh 
