@@ -3,7 +3,7 @@
     - name: Run the bash script install/let-encrypt
       become : true
       become_user: solenb
-      shell: sudo ./install-nc.sh
-      shell: sudo ./lets-encrypt-nc.sh 
+      shell: ./install-nc.sh
+      shell: ./lets-encrypt-nc.sh 
   
  
