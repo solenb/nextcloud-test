@@ -2,8 +2,7 @@
   tasks:
     - name: Run the bash script install/let-encrypt 
       become: yes
-      become_user: solenb
-      become_pass: ukx721917NVUD
+      become_user: root
       shell: install-nc.sh
       shell: lets-encrypt-nc.sh 
   
