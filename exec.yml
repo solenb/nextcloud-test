@@ -1,7 +1,9 @@
-- name: Run the bash script install/let-encrypt
-  hosts: all
+hosts: all
+tasks:
+  - name: Run the bash script install/let-encrypt
   become : true
   become_user: solenb
   shell: sudo ./install-nc.sh
   shell: sudo ./lets-encrypt-nc.sh 
   
+ 
