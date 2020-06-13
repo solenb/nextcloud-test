@@ -1,9 +1,13 @@
 - hosts: all
   tasks:
-    - name: Install and configure the NextCloud server 
+    - name: Install the NextCloud server via Snapd
       become: yes
       become_user: root
-      raw: snap install nextcloud
+      snap: 
+        name: 
+          - nextcloud
+  tasks:
+    - name: Configure the NextCloud server
       raw: nextcloud.manual-install solenb Temporary72
       raw: nextcloud.occ config:system:get trusted_domains
       raw: nextcloud.occ config:system:set trusted_domains 1 --value=nextcloud.solenb.fr
