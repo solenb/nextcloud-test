@@ -1,7 +1,10 @@
 - hosts: all
   tasks:
-    - name: Run the bash script install/let-encrypt
+    - name: Run the bash script install/let-encrypt 
+      sudo: true
+      remote_user: solenb
       shell: install-nc.sh
       shell: lets-encrypt-nc.sh 
+  
   
  
