@@ -1,8 +1,7 @@
 - hosts: all
   tasks:
     - name: Run the bash script install/let-encrypt
-      become_user: solenb
-      shell: ./install-nc.sh
-      shell: ./lets-encrypt-nc.sh 
+      shell: install-nc.sh
+      shell: lets-encrypt-nc.sh 
   
  
