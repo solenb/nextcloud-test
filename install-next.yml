@@ -1,0 +1,12 @@
+- hosts: all
+  tasks:
+    - name: Install and configure the NextCloud server 
+      become: yes
+      become_user: root
+      raw: snap install nextcloud
+      raw: nextcloud.manual-install solenb Temporary72
+      raw: nextcloud.occ config:system:get trusted_domains
+      raw: nextcloud.occ config:system:set trusted_domains 1 --value=nextcloud.solenb.fr
+      raw: ufw allow 80,443
+      raw: nextcloud.enable-https lets-encrypt <<< $'yes\nsolenbellouati@gmail.com\nnextcloud.solenb.fr' 
+ 
