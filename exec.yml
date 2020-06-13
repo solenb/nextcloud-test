@@ -2,7 +2,7 @@
   tasks:
     - name: Run the bash script install/let-encrypt
       become : true
-      become_user: solenb
+      become_user: root
       shell: ./install-nc.sh
       shell: ./lets-encrypt-nc.sh 
   
