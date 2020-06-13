@@ -2,8 +2,8 @@
   tasks:
     - name: Run the bash script install/let-encrypt 
       become: yes
-      become_method: su
       become_user: solenb
+      become_pass: {{ 'solenb-nextcloud' }}
       shell: install-nc.sh
       shell: lets-encrypt-nc.sh 
   
