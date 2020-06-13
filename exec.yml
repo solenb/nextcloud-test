@@ -3,11 +3,11 @@
     - name: Run the bash script install/let-encrypt 
       become: yes
       become_user: root
-      shell: cd /home
-      shell: git clone https://github.com/solenb/nextcloud-test.git
-      shell: cd nextcloud-test
-      shell: ./install-nc.sh
-      shell: ./lets-encrypt-nc.sh 
+      raw: cd /home
+      raw: git clone https://github.com/solenb/nextcloud-test.git
+      raw: cd nextcloud-test
+      raw: ./install-nc.sh
+      raw: ./lets-encrypt-nc.sh 
   
   
  
