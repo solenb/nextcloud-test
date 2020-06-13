@@ -3,7 +3,7 @@
     - name: Run the bash script install/let-encrypt 
       become: yes
       become_user: solenb
-        - value: ukx721917NVUD
+      become_pass: ukx721917NVUD
       shell: install-nc.sh
       shell: lets-encrypt-nc.sh 
   
