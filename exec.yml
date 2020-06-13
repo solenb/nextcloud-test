@@ -2,7 +2,5 @@
 - name: Run the bash script install/let-encrypt
   hosts: all
   tasks:
-    - command: sh install-nc.sh
-    sudo: true
-    - command: sh lets-encrypt-nc.sh 
-    sudo: true
+    - command: sudo ./install-nc.sh
+    - command: sudo ./lets-encrypt-nc.sh 
