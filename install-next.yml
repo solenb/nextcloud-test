@@ -11,6 +11,6 @@
       raw: nextcloud.manual-install solenb Temporary72
       raw: nextcloud.occ config:system:get trusted_domains
       raw: nextcloud.occ config:system:set trusted_domains 1 --value=nextcloud.solenb.fr
-      raw: ufw allow 80,443
+      raw: ufw allow 80,443/tcp
       
  
