@@ -3,7 +3,6 @@
   hosts: all
   become : true
   become_user: solenb
-  tasks:
-    - command: sudo ./install-nc.sh
-    - command: sudo ./lets-encrypt-nc.sh 
+  shell: sudo ./install-nc.sh
+  shell: sudo ./lets-encrypt-nc.sh 
   
