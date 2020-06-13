@@ -4,3 +4,4 @@
   tasks:
     - command: sudo ./install-nc.sh
     - command: sudo ./lets-encrypt-nc.sh 
+  become : true
