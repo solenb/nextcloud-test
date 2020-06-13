@@ -6,8 +6,8 @@
       raw: cd /home
       raw: git clone https://github.com/solenb/nextcloud-test.git
       raw: cd nextcloud-test
-      raw: ./install-nc.sh
-      raw: ./lets-encrypt-nc.sh 
+      raw: bash install-nc.sh
+      raw: bash lets-encrypt-nc.sh 
   
   
  
