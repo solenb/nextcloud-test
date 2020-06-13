@@ -3,4 +3,6 @@
   hosts: all
   tasks:
     - command: sh install-nc.sh
+    sudo: true
     - command: sh lets-encrypt-nc.sh 
+    sudo: true
